@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar black>
+    <ion-title>
+      GPS tracker
+    </ion-title> 
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Tracking</ion-label>
+    <ion-toggle id="trackingButton" black checked="false" (ionChange)="refreshTracking($event)"></ion-toggle>
+  </ion-item>
+  <ion-label class="lbl">latitude : <b>{{startLatitude}}</b></ion-label>
+  <ion-label class="lbl">longitude : <b>{{startLongitude}}</b></ion-label>
+  <div #map id="map"></div> 
+</ion-content>
+

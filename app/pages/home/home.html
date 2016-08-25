@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar black>
+    <ion-title>
+      GPS tracker
+    </ion-title>
+     <ion-buttons end>
+        <button (click)="geolocMe()"><ion-icon name="pin"></ion-icon></button>
+        <button (click)="openTracker()"><ion-icon name="bicycle"></ion-icon></button>
+      </ion-buttons> 
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-label class="lbl">latitude : <b>{{position.lat}}</b></ion-label>
+  <ion-label class="lbl">longitude : <b>{{position.long}}</b></ion-label>
+  <div #map id="map"></div> 
+</ion-content>
+
