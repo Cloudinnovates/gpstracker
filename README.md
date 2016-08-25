@@ -1,1 +1,8 @@
 # gpstracker
+
+Ionic 2 / Angular 2 GPS tracking app
+
+##TODO
+
+- create route list page (delete route option)
+- save route in database
